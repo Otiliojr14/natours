@@ -1,0 +1,5 @@
+@mixin font-config-head($tamanio, $peso, $espacio) {
+  font-size: $tamanio;
+  font-weight: $peso;
+  letter-spacing: $espacio;
+}

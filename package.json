@@ -1,0 +1,20 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Website for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch assets/scss/style.scss assets/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otiliojr14/natours.git"
+  },
+  "author": "Otilio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Otiliojr14/natours/issues"
+  },
+  "homepage": "https://github.com/Otiliojr14/natours#readme"
+}

@@ -1,0 +1,15 @@
+// Abstract Folder
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+// Base folder
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+// Component Folder
+@import "components/button";
+// Layout folder
+@import "layout/header";
+// Pages folder
+@import "pages/home";
