@@ -10,6 +10,7 @@
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   &__logo-box {
     padding: 4rem 0 0 4rem;
@@ -25,6 +26,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 9rem;
+    margin-bottom: 20vh;
   }
 }

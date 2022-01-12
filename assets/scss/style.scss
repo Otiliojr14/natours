@@ -8,8 +8,17 @@
 @import "base/typography";
 @import "base/utilities";
 // Component Folder
+@import "components/bg-video";
 @import "components/button";
+@import "components/card";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/story";
+@import "components/form";
 // Layout folder
+@import "layout/navigation";
 @import "layout/header";
+@import "layout/book";
+@import "layout/footer";
 // Pages folder
 @import "pages/home";
