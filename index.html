@@ -23,7 +23,11 @@
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-      <label for="navi-toggle" class="navigation__button">MENU</label>
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon"></span>
+        <span class="navigation__icon"></span>
+        <span class="navigation__icon"></span>
+      </label>
 
       <div class="navigation__background">&nbsp;</div>
 
@@ -66,7 +70,7 @@
         <h1 class="heading-primary--main">Outdoors</h1>
         <h4 class="heading-primary--sub">is where life happens</h4>
         <div class="box-button">
-          <a href="#" class="btn btn--white btn--animated"
+          <a href="#section-tours" class="btn btn--white btn--animated"
             >Discover our tours</a
           >
         </div>
@@ -164,7 +168,7 @@
           </article>
         </div>
       </section>
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Exciting tours for adventurous people
@@ -196,7 +200,9 @@
                   <p class="card__price-value">$297</p>
                 </div>
                 <div class="box-button">
-                  <a href="#" class="btn btn--white btn--animated">Book now</a>
+                  <a href="#popup" class="btn btn--white btn--animated"
+                    >Book now</a
+                  >
                 </div>
               </div>
             </div>
@@ -226,7 +232,9 @@
                   <p class="card__price-value">$497</p>
                 </div>
                 <div class="box-button">
-                  <a href="#" class="btn btn--white btn--animated">Book now!</a>
+                  <a href="#popup" class="btn btn--white btn--animated"
+                    >Book now!</a
+                  >
                 </div>
               </div>
             </div>
@@ -256,7 +264,9 @@
                   <p class="card__price-value">$897</p>
                 </div>
                 <div class="box-button">
-                  <a href="#" class="btn btn--white btn--animated">Book now!</a>
+                  <a href="#popup" class="btn btn--white btn--animated"
+                    >Book now!</a
+                  >
                 </div>
               </div>
             </div>
@@ -348,18 +358,39 @@
                 />
                 <label for="email" class="form__label">Email address</label>
               </div>
-              <div class="form__group">
-                <select name="size" id="size" class="form__input" required>
-                  <option value="" selected>
-                    Choose the size of the tour group
-                  </option>
-                  <option value="small" class="form__input-option">
-                    Small tour group
-                  </option>
-                  <option value="large" class="form__input-option">
-                    Large tour group
-                  </option>
-                </select>
+              <div class="form__group form__buttons-group">
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    name="size"
+                    id="small"
+                    class="form__radio-input"
+                  />
+                  <label for="small" class="form__radio-label"
+                    ><span class="form__radio-button">
+                      <span class="form__radio-button-container">
+                        <span class="form__radio-button-content"></span>
+                      </span>
+                    </span>
+                    <p>Small tour group</p></label
+                  >
+                </div>
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    name="size"
+                    id="large"
+                    class="form__radio-input"
+                  />
+                  <label for="large" class="form__radio-label"
+                    ><span class="form__radio-button">
+                      <span class="form__radio-button-container">
+                        <span class="form__radio-button-content"></span>
+                      </span>
+                    </span>
+                    <p>Large tour group</p></label
+                  >
+                </div>
               </div>
               <div class="form__group u-margin-top-medium">
                 <div class="box-button">
@@ -412,5 +443,45 @@
         </p>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="./assets/img/nat-8.jpg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+          <img
+            src="./assets/img/nat-9.jpg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text u-margin-bottom-medium">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus dolorem, ut eos veritatis facere aspernatur nobis
+            perspiciatis unde et ipsum impedit. Ipsa sunt magnam quod amet quo
+            commodi exercitationem voluptatem. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Velit quisquam delectus sequi nisi
+            odit dicta distinctio quam ipsam! Ullam, incidunt cum? Iure deleniti
+            officia voluptatum. At fuga nemo fugit esse ex non neque sunt est.
+            Est, molestiae? Deleniti praesentium quo repudiandae quia nulla ex
+            explicabo molestiae dolor?
+          </p>
+          <div class="box-button">
+            <a href="#" class="btn btn--green">Book now</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

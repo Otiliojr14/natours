@@ -55,4 +55,45 @@
     opacity: 0;
     transform: translateY(-4rem);
   }
+
+  &__buttons-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-label {
+    font-size: $default-font-size;
+    cursor: pointer;
+    display: flex;
+  }
+  &__radio-button {
+    padding-right: 2.5rem;
+
+    &-container {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      border: 5px solid $color-primary;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-content {
+      height: 1.2rem;
+      width: 1.2rem;
+      border-radius: 50%;
+      background-color: $color-primary;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-button-content {
+    opacity: 1;
+  }
 }
