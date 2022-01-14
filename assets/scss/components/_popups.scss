@@ -52,10 +52,28 @@
     opacity: 0;
     transform: scale(0.25);
     transition: all 0.4s 0.2s;
+
+    @include responsive(tab-land) {
+      grid-template-columns: 1fr;
+    }
   }
   &__img {
     width: 100%;
     display: block;
+
+    @include responsive(tab-land) {
+      height: 100%;
+    }
+  }
+  &__left {
+    @include responsive(tab-land) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include responsive(phone) {
+      display: none;
+    }
   }
   &__right {
     align-self: center;
@@ -77,5 +95,10 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include responsive(phone) {
+      column-count: unset;
+      -moz-column-count: unset;
+    }
   }
 }

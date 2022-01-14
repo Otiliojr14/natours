@@ -16,6 +16,10 @@
     display: block;
     transition: all 0.3s;
 
+    @include responsive(tab-port) {
+      width: 100%;
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
@@ -59,6 +63,11 @@
   &__buttons-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @include responsive(phone) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
+    }
   }
 
   &__radio-input {
@@ -72,6 +81,10 @@
   }
   &__radio-button {
     padding-right: 2.5rem;
+
+    @include responsive(phone) {
+      padding-right: 1rem;
+    }
 
     &-container {
       height: 3rem;

@@ -18,6 +18,11 @@
     align-items: center;
     cursor: pointer;
     transition: all 0.3s;
+
+    @include responsive(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
   }
   &__background {
     height: 6rem;
@@ -33,6 +38,11 @@
     z-index: 1000;
     transition: transform 0.8s;
     // transform: scale(80);
+
+    @include responsive(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
   }
   &__nav {
     height: 100vh;
@@ -44,6 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 
     opacity: 0;
     width: 0;
@@ -98,6 +109,7 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+    visibility: visible;
   }
   &__icon {
     width: 3rem;
@@ -108,7 +120,7 @@
     transition: all 0.3s;
   }
   &__button:hover &__icon {
-    margin: 5px 0;
+    margin: 6px 0;
   }
   &__checkbox:checked + &__button &__icon {
     background-color: white;
